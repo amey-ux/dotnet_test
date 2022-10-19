@@ -22,13 +22,13 @@ stages:
             sudo apt update 
             sudo apt install nodejs npm 
             sudo npm install i -g @ionic/cli 
-            ionic start
+            ionic build --prod
     
-  - job: Build_webapp  
-    displayName: Build webapp  
-    steps:
-        - script: |
-              ionic build --prod 
+  # - job: Build_webapp  
+  #   displayName: Build webapp  
+  #   steps:
+  #       - script: |
+  #             ionic build --prod 
     
               
         
