@@ -24,6 +24,7 @@ stages:
             sudo npm install i -g @ionic/cli 
             cd SampleWebApplication/
             ionic init "SampleWebApplication" --type=custom
+            sudo npm install
             npm init
             ionic build 
         
