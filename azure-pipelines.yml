@@ -16,12 +16,13 @@ stages:
   displayName: Build stage
   jobs:  
   - job: Build_Server
-    displayName: Build server
+    displayName: Prepare build environment
     steps:
       - script: |
-            sudo apt update
+            sudo apt update 
             sudo apt install nodejs npm 
-            sudo npm install -g @ionic/cli
+            sudo npm install i -g @ionic/cli 
+            ionic -v 
     
   - job: Build_webapp  
     displayName: Build webapp  
